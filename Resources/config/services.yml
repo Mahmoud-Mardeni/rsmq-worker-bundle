@@ -1,0 +1,8 @@
+services:
+#    rsmq_worker.example:
+#        class: Redis\RSMQWorkerBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+  rsmq_worker.twig_extension:
+    class: Redis\RSMQWorkerBundle\Twig\TwigExtension
+    tags:
+         - { name: twig.extension }
